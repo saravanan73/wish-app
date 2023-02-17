@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+
+    .Wish{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        color: white;
+        font-family: 'Roboto', sans-serif;
+        background-color: gray;
+        background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)),url(https://wallpaper-house.com/data/out/12/wallpaper2you_478232.jpg),no-repeat ;
+        background-size: cover;
+        animation: color-change 8s infinite;
+        @keyframes color-change {
+            0%{color: blue;}
+            10%{color:purple;}
+            20%{color: orange;}
+            30%{color: darkgreen;}
+            40%{color: red;}
+            50%{color: lavender;}
+            60%{color: coral}
+            70%{color: cyan;}
+            80%{color: dodgerblue;}
+            90%{color: deeppink;}
+            100%{color: yellow;}
+            
+        }
+    
+        
+        h1{
+            margin-bottom: 10px;
+            position: absolute;
+            top: 120px;
+            color: white;
+            font-family: 'Bilbo Swash Caps', cursive;
+            font-weight: bold;
+            font-size: 3rem;
+            letter-spacing: 2px;
+            text-align: center;
+            animation: color-change 8s infinite;
+           
+                
+        }
+        
+        .counter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            flex-wrap: wrap;
+            top: 300px;
+            
+            
+            .box{
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+                height: 60px;
+                width: 80px;
+                position: relative;             
+                
+                
+                h3{
+                    
+                    position: absolute;
+                    top: 0px;                    
+                }
+                span{
+                    
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    position: absolute;
+                    top: 50px;
+                }
+               
+                
+             }
+             
+                
+             }}
+             @media  screen and (max-width:600px) {
+               .Wish{ 
+                background-size: cover;
+                width: 100%;
+                height: 100vh;
+                position: relative; 
+                h1{
+                    position: absolute;
+                    top: 70px;
+                }
+                 
+                .counter{
+                    display: flex;
+                    
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+           
+             
+       }}
+       @media  screen and (max-width:330px) {
+        .Wish{ 
+         background-size: cover;
+         width: 100%;
+         height: 100vh;
+         position: relative; 
+         h1{
+             position: absolute;
+             top: 35px;
+         }
+          
+         .counter{
+             display: flex;
+             justify-content: center;
+             flex-wrap: wrap;
+         }
+    
+      
+}}
+       
+@media  screen and (max-width:260px) {
+    .Wish{ 
+     background-size: auto;
+     width: 100%;
+     
+     position: relative; 
+     h1{
+         position: absolute;
+         top: 0px;
+         height: 100px;
+        
+     }
+      
+     .counter{
+        margin-top:-15% ;
+         display: flex;
+         justify-content: center;
+         flex-wrap: wrap;
+         position: absolute;
+         
+     }
+
+  
+}}
+    

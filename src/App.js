@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Wish from './components/Wish';
+import { useState } from 'react';
+import Homepage from './components/Homepage';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const initialState={
+    userName:'',
+    DOB:'',
+    state:false
+  }
+  const [details, setDetails] = useState(initialState)
+  const userDetails=(user)=>{
+        
+        setDetails({...user})
+        console.log(details)
+       
+  }
+  if(details.state){
+    return <Wish details={details} />
+   }return <Homepage userDetails={userDetails} />
+  
 }
 
 export default App;

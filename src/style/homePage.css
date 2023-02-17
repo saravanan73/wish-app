@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+body {
+  background-color: #827d7a;
+  font-family: 'Roboto', sans-serif;
+}
+
+body .Homepage {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+body .Homepage .form_tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: rgba(222, 151, 35, 0.457);
+  border: yellow 2px solid;
+  padding: 40px;
+  position: absolute;
+  border-radius: 20px;
+  -webkit-box-shadow: 6px 4px 11px yellow;
+          box-shadow: 6px 4px 11px yellow;
+  margin: 10% 0;
+}
+
+body .Homepage .form_tag label {
+  padding: 5px 0;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+body .Homepage .form_tag input {
+  padding: 7px 0 7px 4px;
+  margin: 5px  0;
+  font-size: 17px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+}
+
+body .Homepage .form_tag input:focus {
+  border: 3px solid rgba(4, 91, 253, 0.934);
+}
+
+body .Homepage .form_tag .date {
+  font-size: 17px;
+}
+
+body .Homepage .form_tag button {
+  margin: 7px 0;
+  padding: 9px;
+  font-size: 18px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 10px;
+}
+
+body .Homepage .form_tag button:hover {
+  background-color: rgba(6, 252, 88, 0.925);
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+/*# sourceMappingURL=homePage.css.map */
